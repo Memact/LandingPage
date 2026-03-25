@@ -1,0 +1,15 @@
+﻿Memact Landing on Render
+
+This folder is ready to host as a Render static site.
+
+Recommended setup:
+1. Put this folder in its own small Git repository.
+2. Push that repo to GitHub.
+3. In Render, create a new Blueprint or Static Site from that repo.
+4. If using Blueprint, point Render at render.yaml.
+5. Add memact.com as the custom domain in Render after the first deploy.
+
+Notes:
+- This site is static. No Node, Python, or framework build is required.
+- The Render Blueprint publishes the folder root directly.
+- The rewrite sends all routes to /index.html so the page remains safe if you add light client-side navigation later.

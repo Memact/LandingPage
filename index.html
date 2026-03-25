@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memact — Query the Past.</title>
+  <meta name="description" content="Memact is launching soon. Join the Discord for early access and updates." />
+  <link rel="icon" type="image/png" href="./assets/brand/icon_logo.png" />
+  <link rel="preload" href="./assets/fonts/Orbitron-Bold.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="preload" href="./assets/fonts/IBMPlexSans-Medium.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="stylesheet" href="./styles.css?v=27" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar reveal" style="--delay: 40ms;">
+      <a class="logo-link" href="#top" aria-label="Memact home">
+        <img class="text-logo" src="./assets/brand/text_logo_nobg.png" alt="Memact" />
+      </a>
+    </header>
+
+    <main class="main" id="top">
+      <section class="hero reveal" style="--delay: 140ms;">
+        <p class="eyebrow">UPCOMING PRODUCT LAUNCH</p>
+        <h1>Query the Past.</h1>
+        <p class="hero-copy">Search your recent moments.</p>
+        <p class="hero-subcopy">Private, local, and built to help you find it again.</p>
+
+      </section>
+
+      <section class="demo-window reveal" style="--delay: 320ms;" aria-label="Memact product demo">
+        <video class="demo-video" autoplay muted loop playsinline preload="metadata" aria-label="Memact desktop demo video">
+          <source src="./assets/demo/Demo.mp4" type="video/mp4" />
+        </video>
+        <button class="demo-control" id="demo-control" type="button" aria-label="Pause demo video">
+          <span class="demo-control-icon" aria-hidden="true"></span>
+        </button>
+        <div class="demo-progress" aria-hidden="true">
+          <span class="demo-progress-fill" id="demo-progress-fill"></span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer reveal" style="--delay: 520ms;">
+      <a class="discord-orb footer-discord" href="https://discord.gg/WjKDeWuGy5" target="_blank" rel="noreferrer" aria-label="Join the Memact Discord">
+        <img src="./assets/brand/discord_symbol_white.png" alt="Discord" />
+        <span class="footer-discord-label">Join Discord server</span>
+      </a>
+    </footer>
+  </div>
+
+  <script src="./script.js?v=20"></script>
+</body>
+</html>
+
