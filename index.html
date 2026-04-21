@@ -1,79 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Memact — Query the Past.</title>
-  <meta name="description" content="Memact is launching soon. Search your recent moments with a private, local memory engine." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://memact.com/" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="Memact answers with citations from the digital activity you consume."
+    />
+    <meta name="theme-color" content="#00011B" />
+    <meta name="application-name" content="Memact" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Memact" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta property="og:site_name" content="Memact" />
+    <meta property="og:title" content="Memact | Answers with citations" />
+    <meta
+      property="og:description"
+      content="Ask Memact a thought or question. It answers with links from the digital activity you consumed."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.memact.com/" />
+    <meta property="og:image" content="https://www.memact.com/assets/brand/og.png" />
+    <meta property="og:image:alt" content="Memact" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Memact | Answers with citations" />
+    <meta
+      name="twitter:description"
+      content="Ask Memact a thought or question. It answers with links from the digital activity you consumed."
+    />
+    <meta name="twitter:image" content="https://www.memact.com/assets/brand/og.png" />
+    <title>Memact | Answers with citations</title>
+    <link rel="canonical" href="https://www.memact.com/" />
+    <link rel="icon" href="/assets/brand/icon_logo.png" />
+    <link rel="apple-touch-icon" href="/assets/brand/icon_logo.png" />
+    <link rel="preload" href="/assets/fonts/Orbitron-Bold.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/assets/fonts/IBMPlexSans-Medium.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="#top" aria-label="Memact home">memact</a>
+        <a class="nav-link" href="#demo">Try demo</a>
+      </nav>
 
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Memact" />
-  <meta property="og:title" content="Memact — Query the Past." />
-  <meta property="og:description" content="Search your recent moments with a private, local memory engine." />
-  <meta property="og:url" content="https://memact.com/" />
-  <meta property="og:image" content="https://memact.com/assets/brand/og.png" />
-  <meta property="og:image:alt" content="Memact logo" />
+      <section id="top" class="hero-section" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Citation engine for consumed digital activity</p>
+          <h1 id="hero-title">Answers with citations from your internet.</h1>
+          <p class="hero-text">
+            Memact captures what you read, watch, search, and revisit. Ask a thought or question,
+            and it answers with links back to the sources that support the answer.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#demo">Try the interactive demo</a>
+            <a class="button button-secondary" href="#how">See how it works</a>
+          </div>
+        </div>
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Memact — Query the Past." />
-  <meta name="twitter:description" content="Search your recent moments with a private, local memory engine." />
-  <meta name="twitter:image" content="https://memact.com/assets/brand/og.png" />
-  <link rel="icon" type="image/png" href="./assets/brand/icon_logo.png" />
-  <link rel="preload" href="./assets/fonts/Orbitron-Bold.ttf" as="font" type="font/ttf" crossorigin />
-  <link rel="preload" href="./assets/fonts/IBMPlexSans-Medium.ttf" as="font" type="font/ttf" crossorigin />
-  <link rel="stylesheet" href="./styles.css?v=30" />
-
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Memact",
-      "url": "https://memact.com/",
-      "description": "Search your recent moments with a private, local memory engine."
-    }
-  </script>
-</head>
-<body>
-  <div class="page-shell">
-    <header class="topbar reveal" style="--delay: 40ms;">
-      <a class="logo-link" href="#top" aria-label="Memact home">
-        <img class="text-logo" src="./assets/brand/text_logo_nobg.png" alt="Memact" />
-      </a>
-    </header>
-
-    <main class="main" id="top">
-      <section class="hero reveal" style="--delay: 140ms;">
-        <p class="eyebrow">UPCOMING PRODUCT LAUNCH</p>
-        <h1>Query the Past.</h1>
-        <p class="hero-copy">Search your recent moments.</p>
-        <p class="hero-subcopy">Private, local, and built to help you find it again.</p>
-
+        <aside class="proof-card" aria-label="Product rules">
+          <p class="proof-kicker">Rule</p>
+          <p class="proof-line">No unsupported answer.</p>
+          <p class="proof-muted">Every claim should point back to captured evidence.</p>
+        </aside>
       </section>
 
-      <section class="demo-window reveal" style="--delay: 320ms;" aria-label="Memact product demo">
-        <video class="demo-video" autoplay muted loop playsinline preload="metadata" aria-label="Memact desktop demo video">
-          <source src="./assets/demo/Demo.mp4" type="video/mp4" />
-        </video>
-        <button class="demo-control" id="demo-control" type="button" aria-label="Pause demo video">
-          <span class="demo-control-icon" aria-hidden="true"></span>
-        </button>
-        <div class="demo-progress" aria-hidden="true">
-          <span class="demo-progress-fill" id="demo-progress-fill"></span>
+      <section id="demo" class="demo-section" aria-labelledby="demo-title">
+        <div class="section-heading">
+          <p class="eyebrow">Interactive sample</p>
+          <h2 id="demo-title">Ask. Answer. Open the links.</h2>
+          <p>
+            This demo uses sample captured activity so it feels real without pretending to know the
+            visitor's history.
+          </p>
+        </div>
+
+        <div class="demo-grid">
+          <section class="query-card" aria-label="Ask Memact">
+            <label for="demo-query">Thought or question</label>
+            <textarea id="demo-query" rows="5"></textarea>
+            <div class="sample-list" id="sample-list" aria-label="Sample questions"></div>
+            <button class="button button-primary full-width" id="answer-button" type="button">
+              Answer with citations
+            </button>
+          </section>
+
+          <section class="answer-card" aria-live="polite" aria-label="Memact answer">
+            <div class="pipeline" id="pipeline"></div>
+            <div class="answer-output" id="answer-output"></div>
+          </section>
         </div>
       </section>
+
+      <section id="how" class="how-section" aria-labelledby="how-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Architecture</p>
+          <h2 id="how-title">Built as six small engines.</h2>
+        </div>
+        <div class="engine-grid">
+          <article>
+            <span>Capture</span>
+            <p>Records consumed pages, posts, videos, searches, timestamps, and content evidence.</p>
+          </article>
+          <article>
+            <span>Inference</span>
+            <p>Turns captured activity into themes and meaning without guessing conclusions.</p>
+          </article>
+          <article>
+            <span>Schema</span>
+            <p>Detects repeated mental-frame signals as context, not diagnosis.</p>
+          </article>
+          <article>
+            <span>Origin</span>
+            <p>Finds direct source candidates with strong wording or phrase overlap.</p>
+          </article>
+          <article>
+            <span>Influence</span>
+            <p>Maps repeated shaping patterns across consumed activity.</p>
+          </article>
+          <article>
+            <span>Interface</span>
+            <p>Turns the evidence into a clear answer with citations the user can open.</p>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>Memact v2.0</span>
+        <span>Answers with citations. No causal overclaiming.</span>
+      </footer>
     </main>
 
-    <footer class="footer reveal" style="--delay: 520ms;">
-      <a class="discord-orb footer-discord" href="https://discord.gg/WjKDeWuGy5" target="_blank" rel="noreferrer" aria-label="Join the Memact Discord">
-        <img src="./assets/brand/discord_symbol_white.png" alt="Discord" />
-        <span class="footer-discord-label">Join Discord server</span>
-      </a>
-    </footer>
-  </div>
-
-  <script src="./script.js?v=20"></script>
-</body>
+    <script src="/script.js" defer></script>
+  </body>
 </html>
-
