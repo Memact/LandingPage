@@ -107,6 +107,7 @@ const sampleList = document.querySelector("#sample-list");
 const answerButton = document.querySelector("#answer-button");
 const pipeline = document.querySelector("#pipeline");
 const answerOutput = document.querySelector("#answer-output");
+const copyrightYear = document.querySelector("#copyright-year");
 
 let activeDemo = demos[0];
 let activeTimer = null;
@@ -223,6 +224,9 @@ answerButton.addEventListener("click", () => {
 });
 
 queryInput.value = activeDemo.prompt;
+if (copyrightYear) {
+  copyrightYear.textContent = String(new Date().getFullYear());
+}
 renderSamples();
 renderPipeline();
 renderAnswer(activeDemo);
