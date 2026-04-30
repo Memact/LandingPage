@@ -10,7 +10,9 @@ It owns one job:
 show the product idea quickly before the full Website app loads
 ```
 
-The production app lives in [Website](https://github.com/Memact/Website).
+Production app:
+
+[![Website](https://img.shields.io/badge/-Website-00011B?style=for-the-badge&logoColor=white)](https://github.com/Memact/Website)
 
 ## What This Repo Owns
 
