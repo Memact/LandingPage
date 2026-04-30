@@ -1,29 +1,28 @@
-# Memact LandingPage
+# Memact Landing Page
 
 Version: `v2.0`
 
-This is the public landing page for Memact. Actual version under development: https://github.com/Memact/Interface
+This repo is the public marketing/demo page for Memact.
 
-Memact is positioned as:
+It owns one job:
 
 ```text
-Cite Your Thoughts.
+show the product idea quickly before the full Website app loads
 ```
 
-The landing page is intentionally static and Render-ready. It shows Memact as a simple product: type a thought, get a cited answer backed by links from what the user read, watched, searched, and revisited.
+The production app lives in [Website](https://github.com/Memact/Website).
 
-## What This Page Shows
+## What This Repo Owns
 
-- a short product-heavy Memact hero
-- an interactive "cite this thought" demo
-- real clickable citation links
-- a simple three-step product flow
-- strict visual consistency with the current Memact Interface style
+- Static landing page.
+- Interactive demo flow.
+- SEO files for the public website.
+- Render static-site configuration.
+- Product copy for visitors, not internal architecture docs.
 
 ## Local Preview
 
 ```powershell
-cd C:\Users\sujay\Downloads\memact_ai\LandingPage
 python -m http.server 8000 --bind 127.0.0.1
 ```
 
@@ -35,36 +34,33 @@ http://127.0.0.1:8000
 
 ## Render Deployment
 
-`render.yaml` is configured as a static site.
+`render.yaml` is configured for a static site.
 
 Use the repo root as the static publish path.
 
-Render can build with:
+Build command:
 
 ```text
 echo "Memact landing ready"
 ```
 
-## Google Search Setup
+## SEO
 
 After `https://www.memact.com` is live:
 
-1. Open Google Search Console.
-2. Add a Domain property for `memact.com`.
-3. Verify ownership with the DNS TXT record Google provides.
-4. Submit the sitemap URL: `https://www.memact.com/sitemap.xml`.
-5. Inspect `https://www.memact.com/` and request indexing after the first live deploy.
-
-The site includes canonical tags, crawl directives, `robots.txt`, `sitemap.xml`, and JSON-LD structured data for Google Search.
+1. Add `memact.com` in Google Search Console.
+2. Verify the domain with the DNS TXT record Google provides.
+3. Submit `https://www.memact.com/sitemap.xml`.
+4. Inspect `https://www.memact.com/`.
+5. Request indexing.
 
 ## Design Rules
 
-- minimal and uncluttered
-- `#00011B` plus white only
-- mobile-first and safe-area aware
+- minimal
+- `#00011B` and white
+- mobile-safe
 - no unsupported claims
-- every demo answer includes citation links
-- no heavy architecture explanation on the landing page
+- no internal architecture clutter
 
 ## License
 
